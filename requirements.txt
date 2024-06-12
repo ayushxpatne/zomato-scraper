@@ -1,0 +1,4 @@
+pandas==2.2.2
+pandas-profiling==3.2.0
+selenium==4.21.0
+selenium-stealth==1.0.6
