@@ -17,7 +17,7 @@ The main functionality of the project is now accessible through a Flask-based we
 4. **Run the Scraping**: Initiate the scraping process through the web interface.
 5. **Export Data**: Click on the respective button (CSV, JSON, XLSX) to download the scraped data in the desired file format.
    
-![ZomatoScraper-Website-Flask](images/Screenshot 2024-06-16 at 7.58.58 PM.png)
+![ZomatoScraper-Website-Flask](images/flask-web-zs.png)
 
 ## Project Structure
 - **app.py**: Contains the Flask application and routes for the web interface.
