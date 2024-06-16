@@ -2,3 +2,6 @@ pandas==2.2.2
 pandas-profiling==3.2.0
 selenium==4.21.0
 selenium-stealth==1.0.6
+SQLAlchemy==2.0.25
+requests==2.31.0
+Flask==2.3.3
