@@ -28,3 +28,28 @@ class SCRAPE_ZOMATO_DINEOUT:
         if self.xslx:
             df = pd.DataFrame(results[1:]).to_excel(self.city+'.xlsx', header=results[0])
 
+class SCRAPE_ZOMATO_DINEOUT_FLASK:
+    
+
+    def __init__(self, city, scroll_count, more_info, images, action) -> None:
+        self.city = city
+        self.scroll = scroll_count
+        self.more_info = more_info
+        self.images = images
+        self.action = action
+
+
+    def scrape(self):
+        results = zomato_dine_out_scrape(
+            city= self.city,
+            scroll_count= self.scroll,
+            more_info=self.more_info,
+            images=self.images,
+        )
+        print('FLASK')
+        if self.action == 'csv':
+            df = pd.DataFrame(results[1:]).to_csv(self.city+'.csv', header=results[0])
+        if self.action == 'json':
+            df = pd.DataFrame(results[1:], columns=results[0]).T.to_json(self.city+'.json', index=False)
+        if self.action == 'xlsx':
+            df = pd.DataFrame(results[1:]).to_excel(self.city+'.xlsx', header=results[0])

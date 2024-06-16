@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='zs-webpage.css') }}" />
+  </head>
+
+  <body style="margin: 0;">
+    <div class="zs-website-page">
+      <div class="red-block">
+        <div class="zomato-scraper">
+        Zomato Scraper
+        </div>
+        <div class="body-text">
+        The Zomato Scraper is a web scraping tool developed using Python and Selenium to collect restaurant data from Zomato. <br />
+        <br />
+        Created primarily for learning purposes, it allows users to enhance their skills in web scraping and automation. Users can specify the city they want to scrape data for and adjust the tool to fetch a desired amount of results. <br />
+        <br />
+        With options to gather additional restaurant details and export the data in various formats, this project serves as both a practical data collection tool and an educational resource for mastering web scraping techniques.
+        </div>
+        <div class="github">
+          <span class="git-button buttontext">
+          github.com/ayushxpatne
+          </span>
+        </div>
+      </div>
+
+  
+
+      
+
+      <div class="container-3">
+
+        <form  action="/submit" method="post">
+          <div class="form">
+            <label for="city" class="form-text-24">City:</label>
+
+            {% if error_city %}
+              <input type="text" id="city" name="city" class="field-error" placeholder="Enter city", value={{city}}>
+            {% else %}
+              <input type="text" id="city" name="city" class="field" placeholder="Enter city", value={{city}}>
+            {% endif %}
+
+          </div>
+
+<!--           
+            <div class="error-message">
+              {{error_city}}
+            </div> -->
+          
+
+          <div class="form">
+            <label for="scroll" class="form-text-24">Scroll:</label>
+            {% if error_scroll %}
+            <input type="text" id="scroll" name="scroll" class="field-error" placeholder="Enter Scroll Value", value={{scroll}}>
+            {% else %}
+              <input type="text" id="scroll" name="scroll" class="field" placeholder="Enter Scroll Value", value={{scroll}}>
+            {% endif %}
+          </div>
+
+          
+          <div class="parameters">Parameters:</div>
+          <div class="checkbox-div">
+            <div class="more">
+              <input type="checkbox" id="more-info" name="more-info" class="behind-checkbox">
+              <label for="more-info" class="form-text-16">More Info</label>
+            </div>
+            <div class="images">
+              <input type="checkbox" id="images" name="images" class="behind-checkbox">
+              <label for="images" class="form-text-16">Images</label>
+            </div>
+          </div>
+          
+          <div class="form-text-24">Save As:</div>
+          <div class="container">
+            <button type="submit" class="button buttontext" name="action", value="csv">.csv</button>
+            <button type="submit" class="button buttontext" name="action" value="json">.JSON</button>
+            <button type="submit" class="button buttontext" name="action" value="xlsx">.xlsx</button>
+          </div>
+        </form>
+      </div>
+
+
+
+      
+      </div>
+    </div>
+  </body>
+</html>

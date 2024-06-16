@@ -1,5 +1,3 @@
-import driver.driver_setup as driver_setup
-from selenium import webdriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait

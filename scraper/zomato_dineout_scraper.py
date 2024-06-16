@@ -1,7 +1,6 @@
 
 import driver.driver_setup as driver_setup
-import zomato_dinout_scrape_parameters as parameters
-from selenium import webdriver
+import scraper.zomato_dinout_scrape_parameters as parameters
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,6 +10,7 @@ from vars.globals import OUTPUT
 import time
 
 def zomato_dine_out_scrape(city, more_info, images, scroll_count):
+    print(f'zomato_dine_out_scrape: {city} ')
     driver = driver_setup.prepare_driver()
     driver.get(f'https://www.zomato.com/{city}/dine-out')
     output = [OUTPUT.output_ff]

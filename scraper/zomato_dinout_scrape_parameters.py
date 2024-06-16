@@ -1,4 +1,4 @@
-import zomato_info_page
+from scraper import zomato_info_page
 
 def more_info_from_links(driver, output):
 
