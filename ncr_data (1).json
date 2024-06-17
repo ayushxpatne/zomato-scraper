@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "C\u00e9 La Vie Kitchen & Bar",
+        "Cuisines": "North Indian, Mediterranean, Continental, Sushi, Italian, Lebanese, Asian, Bar Food",
+        "Prices": "\u20b92,200 for two",
+        "Address": "Middle Circle, Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/c%C3%A9-la-vie-kitchen-bar-connaught-place-new-delhi\/info"
+    },
+    {
+        "Name": "Chido",
+        "Cuisines": "North Indian, Asian, Lebanese, Italian, European, Chinese, Beverages",
+        "Prices": "\u20b92,000 for two",
+        "Address": "Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/chido-connaught-place-new-delhi\/info"
+    },
+    {
+        "Name": "Somewhere Restaurant & Bar",
+        "Cuisines": "Asian, Lebanese, Continental, North Indian, Fast Food, Bar Food, Desserts, Beverages",
+        "Prices": "\u20b92,000 for two",
+        "Address": "Middle Circle, Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/somewhere-restaurant-bar-connaught-place-new-delhi\/info"
+    },
+    {
+        "Name": "Xero Courtyard",
+        "Cuisines": "Bar Food, American, Continental, North Indian",
+        "Prices": "\u20b91,800 for two",
+        "Address": "Janpath, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/xero-courtyard-janpath-new-delhi\/info"
+    },
+    {
+        "Name": "The W Restaurant",
+        "Cuisines": "Continental, North Indian, Italian, Chinese",
+        "Prices": "\u20b91,500 for two",
+        "Address": "Outer Circle, Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/the-w-restaurant-connaught-place-new-delhi\/info"
+    },
+    {
+        "Name": "Out Of The Box Courtyard",
+        "Cuisines": "Continental, North Indian, Italian, Pizza, Chinese, Asian, Fast Food, Beverages",
+        "Prices": "\u20b92,200 for two",
+        "Address": "Middle Circle, Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/out-of-the-box-courtyard-1-connaught-place-new-delhi\/info"
+    },
+    {
+        "Name": "Ministry Of Beer",
+        "Cuisines": "North Indian, Italian, Asian, Continental, Chinese, Beverages",
+        "Prices": "\u20b92,800 for two",
+        "Address": "Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/ministry-of-beer-connaught-place-new-delhi\/info"
+    },
+    {
+        "Name": "Cedar Club House",
+        "Cuisines": "Modern Indian, Mediterranean, Continental, Mexican, Turkish, Asian, Desserts, Bar Food",
+        "Prices": "\u20b91,800 for two",
+        "Address": "Janpath, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/ncr\/cedar-club-house-janpath-new-delhi\/info"
+    },
+    {
+        "Name": "The Darzi Bar & Kitchen",
+        "Cuisines": "North Indian, Chinese, Asian, Italian, Mughlai, Desserts, Tea, Beverages",
+        "Prices": "\u20b92,800 for two",
+        "Address": "Middle Circle, Connaught Place, New Delhi",
+        "Link": "https:\/\/www.zomato.com\/TheDarziBar\/info"
+    }
+]

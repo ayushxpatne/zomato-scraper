@@ -5,3 +5,4 @@ selenium-stealth==1.0.6
 SQLAlchemy==2.0.25
 requests==2.31.0
 Flask==2.3.3
+xlsxwriter==3.2.0

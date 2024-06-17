@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='zs-webpage.css') }}" />
+    <!-- <link rel="stylesheet" href="/Users/ayushpatne/Developer/Zomato-Scraper/website/static/zs-webpage.css" /> -->
+
+</head>
+<body style="margin: 0;">
+    <div class=" zs-export">
+        
+        <div class="center-wrapper">
+            <div class="zomato-scraper-wrapper">
+                <div class="zomato-scraper-export">
+                    zomato scraper
+                </div>
+            </div>
+            <div class="form-text-24-export">
+                Scraped {{num_of_records}} Results for {{city}}
+            </div>
+
+            <form method="post" action="/download">
+                <div class="form-text-24-export">Save As:</div>
+                <div class="container">
+                  <button type="submit" class="button buttontext" name="action", value="csv">.csv</button>
+                  <button type="submit" class="button buttontext" name="action" value="json">.JSON</button>
+                  <button type="submit" class="button buttontext" name="action" value="xlsx">.xlsx</button>
+                </div>
+            </form>
+
+            <br>
+            {% for key in results %}
+                <div class="card">
+                    <div>
+                        <div class=" form-text-16-export">{{ results[key]['Name'] }}</div>
+                        <div class="form-text-16-light-export">{{ results[key]['Cuisines'] }}</div>
+                        <div class="form-text-16-light-export">{{ results[key]['Address'] }}</div>
+                    </div>
+                    <div>
+                        <div class="form-text-16-light-export">{{ results[key]['Prices'] }}</div>
+                    </div>
+                </div>
+                <br>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

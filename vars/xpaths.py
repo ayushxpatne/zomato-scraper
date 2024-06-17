@@ -1,9 +1,9 @@
 class XPATHS:
     jumbo_tracker = '//*[@id="root"]/div/div[10]/div/div[1]/div'
     name = 'div/a[2]/div[1]/h4'
-    cuisines = 'div/a[2]/div[2]/p[1]'
+    cuisines = 'div/a[2]/div[3]/div[1]/p'
     prices = 'div/a[2]/div[2]/p[2]' 
-    address = 'div/a[2]/div[3]/div[1]/p'
+    address = 'div/a[2]/div[2]/p[1]'
     zomato_link = 'div/a[1]'
 
     image_1 = '//*[@id="root"]/div/main/div/section[2]/div[1]/div/div/img'

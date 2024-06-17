@@ -47,9 +47,13 @@ class SCRAPE_ZOMATO_DINEOUT_FLASK:
             images=self.images,
         )
         print('FLASK')
-        if self.action == 'csv':
-            df = pd.DataFrame(results[1:]).to_csv(self.city+'.csv', header=results[0])
-        if self.action == 'json':
-            df = pd.DataFrame(results[1:], columns=results[0]).T.to_json(self.city+'.json', index=False)
-        if self.action == 'xlsx':
-            df = pd.DataFrame(results[1:]).to_excel(self.city+'.xlsx', header=results[0])
+
+        df = pd.DataFrame(results[1:], columns=results[0])
+        return df.T.to_dict()
+
+        # if self.action == 'csv':
+        #     df = pd.DataFrame(results[1:]).to_csv(self.city+'.csv', header=results[0])
+        # if self.action == 'json':
+        #     df = pd.DataFrame(results[1:], columns=results[0]).T.to_json(self.city+'.json', index=False)
+        # if self.action == 'xlsx':
+        #     df = pd.DataFrame(results[1:]).to_excel(self.city+'.xlsx', header=results[0])
